@@ -1,0 +1,19 @@
+{
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "key",
+      "AttributeType": "S"
+    }
+  ],
+  "TableName": "dev-paybill-key-value",
+  "KeySchema": [
+    {
+      "AttributeName": "key",
+      "KeyType": "HASH"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 10,
+    "WriteCapacityUnits": 10
+  }
+}
